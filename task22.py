@@ -6,7 +6,7 @@ n, m = input("Введите через пробел 2 числа (размер�
 n = int(n)
 m = int(m)
 str = input(F"Введите первый набор состоящий из {n} чисел:")
-firstList = str.split()
+firstList = [int(x) for x in str.split()]
 str = input(F"Введите второй набор состоящий из {m} чисел:")
-secondList = str.split()
+secondList = [int(x) for x in str.split()]
 print(sorted(set(firstList).intersection(set(secondList))))
